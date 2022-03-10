@@ -1,0 +1,77 @@
+*{
+    border: 1px solid black;
+}
+
+html{
+    width: 21cm;
+    height: 29.7cm;
+    margin: 0px;
+    display: block;
+    font-family: calibri, monospace;
+
+}
+.banner{
+    display: flex;
+    width: 17cm;
+    height: 2.197cm;
+    margin-top: 1.9cm;
+    margin-left: 2.197cm;
+    margin-right: 0.6cm;
+}
+
+.primerbanner{
+    display: flex;
+    width: 4.55cm;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.primertexto, .segundotexto{
+    height: 0.480cm;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.logoenercop, .primertexto, .segundotexto, #logoenercopimg{
+    border: 0px;
+}
+.logoenercop #logoenercopimg{
+    width: 22.36mm;
+    height: 13.49mm;
+}
+.primerbanner .logoenercop{
+    height: 1.139cm;
+}
+
+.segundobanner{
+    display: flex;
+    flex-direction: column;
+    width: 8.92cm;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.establecimiento{
+    height: 1.68cm;
+}
+
+.titulo{
+    height: 0.53cm;
+}
+
+#logouaa{
+    height: 0.84cm;
+}
+
+#logouaa, .establecimiento .textbanner, #uaalogo, .titulo{
+    border: none;
+}
+
+.tercerbanner{
+    width: 3.704cm;
+}
