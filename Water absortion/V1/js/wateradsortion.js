@@ -196,12 +196,12 @@ $buttonGenerateTable.onclick = function(){
     promedioHidratacionResult.textContent = averangeAb.toFixed(2);
 
     let timeAsk = document.getElementById('hour-test').value;
-    let timeSpan = document.getElementById('value');
+    let timeSpan = document.getElementById('bannerhora');
 
     timeSpan.textContent = `Hora: ${timeAsk}hs`;
 
     let dateAsk = document.getElementById('date-test').value.toString();
-    let dateSpan = document.getElementById('date-span');
+    let dateSpan = document.getElementById('bannerfecha');
     let dateAskInv = dateAsk.split('-').reverse().join('-');
     dateSpan.textContent = `Fecha: ${dateAskInv}`;
 
