@@ -1,2 +1,2 @@
 # Projects for work
-In this one is to calculate and generate an file in a automatic way basically lying about the values and result. IT IS NOT ETHICAL
+this one is for calculate and generate an file in a automatic way, lying about the values and result. IT IS NOT ETHICAL
