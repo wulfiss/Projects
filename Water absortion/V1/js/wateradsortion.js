@@ -245,6 +245,11 @@ $buttonGenerateTable.onclick = function(){
     let dateAskInv = dateAsk.split('-').reverse().join('-');
     dateSpan.textContent = `Fecha: ${dateAskInv}`;
 
+    let observacionFinal = document.getElementById('medidascorretivas');
+    let observacionInicial = document.getElementById('observacion').value;
+
+    observacionFinal.textContent = `Observaciones: ${observacionInicial}`
+
     return false;
 }
 

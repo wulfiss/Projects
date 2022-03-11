@@ -74,3 +74,10 @@ html{
     width: 6.15cm;
     text-align: end;
 }
+
+#observacion{
+    display: block;
+    text-align: start;
+    width: 400px;
+    height: 100px;
+}
