@@ -16,7 +16,7 @@ function createTable(row, colms){
 function showTableNoShowform(){
     let styleTable = document.getElementById("registro");
     styleTable.style.display ='block';
-    let styleButton = document.getElementById("formdatos");
+    let styleButton = document.getElementById("formatos");
     styleButton.style.display ='none';
 }
 

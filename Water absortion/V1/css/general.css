@@ -1,5 +1,7 @@
 html{
     font-family: calibri, monospace;
+    width: 21cm;
+    height: 29.7cm;
 }
 
 #registro{
@@ -81,3 +83,14 @@ html{
     width: 400px;
     height: 100px;
 }
+
+@media print {
+
+    html, body {
+      height:100%; 
+      margin: 0 !important; 
+      padding: 0 !important;
+      overflow: hidden;
+    }
+  
+  }
