@@ -215,7 +215,7 @@ $buttonGenerateTable.onclick = function(){
         x[sealLost4C+2].textContent = numberChicken[23].toFixed(3);
         x[sealLost4C+3].textContent = "----";
         x[sealLost4C+4].textContent = "----";
-        x[sealLost5C+5].textContent = "----";
+        x[sealLost4C+5].textContent = "----";
     }
 
     if(sealLost5 != 25){
