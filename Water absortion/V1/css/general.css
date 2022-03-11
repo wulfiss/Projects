@@ -48,3 +48,26 @@ html{
     border: 1.5px solid black;
     font-size: 12px;
 }
+
+#firmas{
+    width: 17cm;
+    margin-left: 2.197cm;
+    margin-top: 1.59cm;
+    font-size: 12px;    
+}
+
+#responsable, #verificacion{
+    display: inline-block;
+    font-size: 12px;    
+}
+
+#responsable{
+    width: 4,56cm;
+    margin-right: 2.67cm;
+    padding-left: 10px;
+}
+
+#verificacion{
+    width: 6.15cm;
+    text-align: end;
+}
