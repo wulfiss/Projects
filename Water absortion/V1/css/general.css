@@ -37,3 +37,14 @@ html{
     justify-content: center;
     align-items: center;
 }
+
+#medidascorretivas{
+    display: flex;
+    width: 17cm;
+    height: 2.12cm;
+    margin-top: 1.06cm;
+    margin-left: 2.197cm;
+    margin-right: 0,6cm;
+    border: 1.5px solid black;
+    font-size: 12px;
+}
