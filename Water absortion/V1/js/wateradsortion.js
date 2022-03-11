@@ -195,10 +195,6 @@ $buttonGenerateTable.onclick = function(){
     let promedioHidratacionResult = document.getElementById('promediohidratacionresult');
     promedioHidratacionResult.textContent = averangeAb.toFixed(2);
 
-    x[132].setAttribute("colspan", 6);
-    x[132].textContent = `Hidratación promedio: ${averangeAb.toFixed(2)}`;
-    x[132].style.fontWeight = 550;
-
     let timeAsk = document.getElementById('hour-test').value;
     let timeSpan = document.getElementById('value');
 
