@@ -90,3 +90,23 @@ html{
     height: 0.53cm;
     padding: 1px;
 }
+
+#bannerfecha, #bannerhora{
+    display: inline-block;
+    height: 0.53cm;
+    margin-top: 1.06cm;
+    margin-bottom: 1.06cm;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#bannerfecha{
+    width: 10.01cm;
+    margin-left: 2.197cm;
+    margin-right: 0cm;
+}
+
+#bannerhora{
+    width: 6.94cm;
+    margin-left: 0cm;
+}
