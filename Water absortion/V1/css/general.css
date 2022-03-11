@@ -5,3 +5,35 @@ html{
     display: block;
     font-family: calibri, monospace;
 }
+
+#ultimoresultado{
+    display: flex;
+    width: 5.45cm;
+    margin-left: 7.53cm;
+    margin-right: 0,6cm;
+    margin-top: 0.53cm;
+    margin-bottom: 1,06cm;
+    border: 1.5px solid black;
+}
+
+.promediotexto, #promediohidratacionresult{
+    display: flex;
+    height: 0.9cm;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.promediotexto{
+    display: flex;
+    flex-direction: column;
+    width: 2.67cm;
+    border-right: 1.5px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+#promediohidratacionresult{
+    width: 2.78cm;
+    justify-content: center;
+    align-items: center;
+}
