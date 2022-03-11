@@ -45,5 +45,11 @@ th{
 }
 
 /*tabla body*/
+#testbody{
+    font-size: 15px;
+}
 
+td{
+    border: 1.5px solid black;
+}
 /*tabla body*/
