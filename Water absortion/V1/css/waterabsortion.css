@@ -1,7 +1,3 @@
-*{
-    border: 1px solid black;
-}
-
 html{
     width: 21cm;
     height: 29.7cm;
@@ -17,6 +13,7 @@ html{
     margin-top: 1.9cm;
     margin-left: 2.197cm;
     margin-right: 0.6cm;
+    border: 1.5px solid black;
 }
 
 .primerbanner{
@@ -26,7 +23,8 @@ html{
     font-size: 12px;
     font-weight: bold;
     text-align: center;
-
+    border-right: 1.5px solid black;
+    
 }
 
 .primertexto, .segundotexto{
@@ -36,12 +34,10 @@ html{
     align-items: flex-end;
 }
 
-.logoenercop, .primertexto, .segundotexto, #logoenercopimg{
-    border: 0px;
-}
 .logoenercop #logoenercopimg{
-    width: 22.36mm;
-    height: 13.49mm;
+    width: 2.15cm;
+    height: 1.3cm;
+    padding-top: 1px;
 }
 .primerbanner .logoenercop{
     height: 1.139cm;
@@ -72,10 +68,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#logouaa, .establecimiento .textbanner, #uaalogo, .titulo{
-    border: none;
+    border-bottom: 1.5px solid black;
 }
 
 .tercerbanner{
@@ -85,14 +78,15 @@ html{
     font-size: 13px;
     font-weight: bold;
     justify-content: center;
+    border-left: 1.5px solid black;
 }
 
 .registro, .vigencia, .revision{
     height: 0.56cm;
-    border: none;
+    padding: 1px;
 }
 
 .pagina{
     height: 0.53cm;
-    border: none;
+    padding: 1px;
 }
