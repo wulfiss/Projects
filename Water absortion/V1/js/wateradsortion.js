@@ -204,7 +204,7 @@ $buttonGenerateTable.onclick = function(){
         x[sealLost3C+5].textContent = "----";
     }
 
-    if(sealLost2 != 24){
+    if(sealLost4 != 24){
         x[140].textContent = numberChicken[sealLost4-1].toFixed(3);
         x[141].textContent = finalChickenW[sealLost4-1].toFixed(3);
         x[142].textContent = subtrationChickenArray[sealLost4-1].toFixed(3);
@@ -218,7 +218,7 @@ $buttonGenerateTable.onclick = function(){
         x[sealLost5C+5].textContent = "----";
     }
 
-    if(sealLost2 != 25){
+    if(sealLost5 != 25){
         x[146].textContent = numberChicken[sealLost5-1].toFixed(3);
         x[147].textContent = finalChickenW[sealLost5-1].toFixed(3);
         x[148].textContent = subtrationChickenArray[sealLost5-1].toFixed(3);
@@ -231,11 +231,6 @@ $buttonGenerateTable.onclick = function(){
         x[sealLost5C+4].textContent = "----";
         x[sealLost5C+5].textContent = "----";
     }
-    
-    tr = testBody.insertRow();
-    td = tr.insertCell();
-    td.appendChild(document.createTextNode('----'));
-
     
     let promedioHidratacionResult = document.getElementById('promediohidratacionresult');
     promedioHidratacionResult.textContent = averangeAb.toFixed(2);
