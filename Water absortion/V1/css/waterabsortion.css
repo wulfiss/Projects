@@ -83,12 +83,14 @@ html{
 
 .registro, .vigencia, .revision{
     height: 0.56cm;
-    padding: 1px;
+    padding: 2px;
+    padding-left: 3px;
 }
 
 .pagina{
     height: 0.53cm;
-    padding: 1px;
+    padding: 2px;
+    padding-left: 3px;
 }
 
 #bannerfecha, #bannerhora{
