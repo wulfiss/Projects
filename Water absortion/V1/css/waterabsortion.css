@@ -113,15 +113,46 @@ html{
     margin-left: 0cm;
 }
 
+#test{
+    display: table;
+    width: 17cm;
+    margin-left: 2.197cm;
+    margin-right: 0,6cm;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead{
+    width: 17cm;
+}
+
 th{
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
     border: 1px solid black;
     height: 0.53cm;
 }
 
-#test{
-    display: inline-block;
-    width: 21cm;
-    margin-left: 2.197cm;
+#npollos{
+    width: 2.30cm;
+}
+
+#nprecintos{
+    width: 2.34cm;
+}
+
+#pesoinicial{
+    width: 2.70cm;
+}
+
+#pesofinal{
+    width: 2.79cm;
+}
+
+#diferencia{
+    width: 3.40cm;
+}
+
+#phidratacion{
+    width: 3.4cm;
 }
