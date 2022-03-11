@@ -14,9 +14,9 @@ function createTable(row, colms){
 }
 
 function showTableNoShowform(){
-    let styleTable = document.getElementById("container-1");
+    let styleTable = document.getElementById("registro");
     styleTable.style.display ='block';
-    let styleButton = document.getElementById("container-2");
+    let styleButton = document.getElementById("formdatos");
     styleButton.style.display ='none';
 }
 
@@ -39,26 +39,7 @@ function averangeAbsortionArray(){
     averangeAb = sumTotal / m;
     return averangeAb;
 }
-/*
-function comprobation(){
-    if(averangeAbsortionArray() <= waterMax && averangeAbsortionArray() >= waterMin){
-        return true;
-    }else{
-        return false;
-    }
-}
 
-function callTail(){
-    if(comprobation() === true){
-
-    }else{
-        arrayCompletation();
-        averangeAbsortionArray();
-        comprobation()
-        callTail();
-    }
-}
-*/
 function getRandomArbitrarySeal(max, min){
     let p = m + 2;
     for (let n = 0; n < p; n++){
@@ -209,6 +190,10 @@ $buttonGenerateTable.onclick = function(){
     tr = testBody.insertRow();
     td = tr.insertCell();
     td.appendChild(document.createTextNode('----'));
+
+    
+    let promedioHidratacionResult = document.getElementById('promediohidratacionresult');
+    promedioHidratacionResult.textContent = averangeAb.toFixed(2);
 
     x[132].setAttribute("colspan", 6);
     x[132].textContent = `Hidratación promedio: ${averangeAb.toFixed(2)}`;
