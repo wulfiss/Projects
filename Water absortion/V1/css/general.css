@@ -2,11 +2,11 @@ html{
     font-family: calibri, monospace;
 }
 
-.registro{
+#registro{
     width: 21cm;
     height: 29.7cm;
     margin: 0px;
-    display: block;
+    display: none;
 }
 
 #ultimoresultado{
