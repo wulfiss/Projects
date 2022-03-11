@@ -79,5 +79,20 @@ html{
 }
 
 .tercerbanner{
+    display: flex;
+    flex-direction: column;
     width: 3.704cm;
+    font-size: 13px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.registro, .vigencia, .revision{
+    height: 0.56cm;
+    border: none;
+}
+
+.pagina{
+    height: 0.53cm;
+    border: none;
 }
