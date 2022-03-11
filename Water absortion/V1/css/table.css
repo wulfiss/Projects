@@ -1,0 +1,55 @@
+#test{
+    display: table;
+    height: 13.78cm;
+    width: 17cm;
+    margin-left: 2.197cm;
+    margin-right: 0,6cm;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/*tabla head*/
+thead{
+    width: 17cm;
+}
+
+th{
+    font-size: 13px;
+    font-weight: bold;
+    border: 1.5px solid black;
+    height: 0.53cm;
+}
+
+#npollos{
+    width: 2.30cm;
+}
+
+#nprecintos{
+    width: 2.34cm;
+}
+
+#pesoinicial{
+    width: 2.70cm;
+}
+
+#pesofinal{
+    width: 2.79cm;
+}
+
+#diferencia{
+    width: 3.40cm;
+}
+
+#phidratacion{
+    width: 3.4cm;
+}
+
+/*tabla body*/
+#testbody{
+    font-size: 15px;
+}
+
+td{
+    border: 1.5px solid black;
+}
+/*tabla body*/

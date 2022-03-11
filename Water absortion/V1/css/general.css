@@ -1,0 +1,96 @@
+html{
+    font-family: calibri, monospace;
+    width: 21cm;
+    height: 29.7cm;
+}
+
+#registro{
+    width: 21cm;
+    height: 29.7cm;
+    margin: 0px;
+    display: none;
+}
+
+#ultimoresultado{
+    display: flex;
+    width: 5.45cm;
+    margin-left: 7.53cm;
+    margin-right: 0,6cm;
+    margin-top: 0.53cm;
+    margin-bottom: 1,06cm;
+    border: 1.5px solid black;
+}
+
+.promediotexto, #promediohidratacionresult{
+    display: flex;
+    height: 0.9cm;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.promediotexto{
+    display: flex;
+    flex-direction: column;
+    width: 2.67cm;
+    border-right: 1.5px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+#promediohidratacionresult{
+    width: 2.78cm;
+    justify-content: center;
+    align-items: center;
+}
+
+#medidascorretivas{
+    display: flex;
+    width: 17cm;
+    height: 2.12cm;
+    margin-top: 1.06cm;
+    margin-left: 2.197cm;
+    margin-right: 0,6cm;
+    border: 1.5px solid black;
+    font-size: 12px;
+}
+
+#firmas{
+    width: 17cm;
+    margin-left: 2.197cm;
+    margin-top: 1.59cm;
+    font-size: 12px;    
+}
+
+#responsable, #verificacion{
+    display: inline-block;
+    font-size: 12px;    
+}
+
+#responsable{
+    width: 4,56cm;
+    margin-right: 2.67cm;
+    padding-left: 10px;
+}
+
+#verificacion{
+    width: 6.15cm;
+    text-align: end;
+}
+
+#observacion{
+    display: block;
+    text-align: start;
+    width: 400px;
+    height: 100px;
+}
+
+@media print {
+
+    html, body {
+      height:100%; 
+      margin: 0 !important; 
+      padding: 0 !important;
+      overflow: hidden;
+    }
+  
+  }
