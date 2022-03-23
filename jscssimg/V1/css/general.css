@@ -23,8 +23,8 @@ html{
 
 .promediotexto, #promediohidratacionresult{
     display: flex;
-    height: 0.9cm;
-    font-size: 12px;
+    height: 1.2cm;
+    font-size: 16px;
     font-weight: bold;
 }
 
