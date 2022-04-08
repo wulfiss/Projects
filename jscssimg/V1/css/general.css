@@ -118,3 +118,8 @@ input[type=date], input[type=time]{
     border-radius: 10px;
     padding: 20px;
 }
+
+h4{
+    text-align: center;
+}
+
