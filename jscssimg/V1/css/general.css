@@ -94,3 +94,12 @@ html{
     }
   
   }
+
+input{
+    width: 50px;
+    text-align: center;
+}
+
+input[type=date], input[type=time]{
+    width: fit-content;
+}
