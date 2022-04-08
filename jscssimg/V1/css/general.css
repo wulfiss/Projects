@@ -97,6 +97,7 @@ html{
 
 input{
     width: 50px;
+    height: 20px;
     text-align: center;
 }
 
@@ -106,4 +107,14 @@ input[type=date], input[type=time]{
 
 #observacion, #medidascorretivas{
     resize: none;
+}
+
+#formatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid blue;
+    border-radius: 10px;
+    padding: 20px;
 }
