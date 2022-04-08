@@ -103,3 +103,7 @@ input{
 input[type=date], input[type=time]{
     width: fit-content;
 }
+
+#observacion, #medidascorretivas{
+    resize: none;
+}
