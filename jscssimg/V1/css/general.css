@@ -105,7 +105,7 @@ input[type=date], input[type=time]{
     width: fit-content;
 }
 
-#observacion, #medidascorretivas{
+#observacionForm, #medidascorretivas{
     resize: none;
     padding: 5px 5px;
 }
