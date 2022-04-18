@@ -21,8 +21,9 @@ function showTableNoShowform(){
 }
 
 function getRandomArbitrary(max, min){
-    let i = max*2;
+    let i = max*1.8;
     let x = min - 2;
+    if (x <= 0){x = 1};
     return parseFloat((Math.random() * (i - x) + x).toFixed(2));
 }
 
