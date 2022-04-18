@@ -21,7 +21,7 @@ function showTableNoShowform(){
 }
 
 function getRandomArbitrary (){
-    return parseFloat((Math.random() * (15 - 4) + 4).toFixed(2));
+    return parseFloat((Math.random() * (8 - 1) + 1).toFixed(2));
 }
 
 function arrayCompletation(){
@@ -246,9 +246,9 @@ $buttonGenerateTable.onclick = function(){
     dateSpan.textContent = `Fecha: ${dateAskInv}`;
 
     let observacionFinal = document.getElementById('medidascorretivas');
-    let observacionInicial = document.getElementById('observacion').value;
+    let observacionInicial = document.getElementById('observacionForm').value;
 
-    observacionFinal.textContent = `Observaciones: ${observacionInicial}`
+    observacionFinal.textContent = `Observaciones: ${observacionInicial}`;
 
     return false;
 }
