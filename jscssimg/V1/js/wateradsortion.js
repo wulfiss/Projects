@@ -20,13 +20,15 @@ function showTableNoShowform(){
     styleButton.style.display ='none';
 }
 
-function getRandomArbitrary (){
-    return parseFloat((Math.random() * (8 - 1) + 1).toFixed(2));
+function getRandomArbitrary(max, min){
+    let i = max*2;
+    let x = min - 2;
+    return parseFloat((Math.random() * (i - x) + x).toFixed(2));
 }
 
-function arrayCompletation(){
+function arrayCompletation(max, min){
     for (i = 0; i < m; i++) {
-        sumA[i] = getRandomArbitrary();
+        sumA[i] = getRandomArbitrary(max, min);
     }
 }
 
@@ -105,7 +107,7 @@ $buttonGenerateTable.onclick = function(){
         if(comprobation() === true){
     
         }else{
-            arrayCompletation();
+            arrayCompletation(waterMax, waterMin);
             averangeAbsortionArray();
             comprobation()
             callTail();
@@ -113,7 +115,7 @@ $buttonGenerateTable.onclick = function(){
     }
     
 
-    arrayCompletation();
+    arrayCompletation(waterMax,waterMin);
     averangeAbsortionArray();
     comprobation(); 
     callTail();
