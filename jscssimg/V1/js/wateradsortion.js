@@ -85,7 +85,7 @@ function averangeAbsortionArray(){
 
 function getRandomArbitrarySeal(){
     let p = m + 5;
-    let max = parseFloat((Math.random() * (9999999 - 1000) + 1000).toFixed());
+    let max = parseFloat((Math.random() * (999999 - 1000) + 1000).toFixed());
     let min = max - 100;
     for (let n = 0; n < p; n++){
         numberSeal[n] = parseFloat((Math.random() * (max - min) + min).toFixed());
