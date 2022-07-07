@@ -23,13 +23,17 @@
                         <h4>Peso promedio de pollos faenados</h4>
                         <label for="average-chicken-weight">Peso promedio de los pollos: </label>
                         <input type="number" id="average-chicken-weight" value= 2.500 placeholder="Ej: 2.500"/>
-                                                
-                        <h4>Rango de porcentaje final de Hidratación</h4>
-                        <label for="water-max">Valor máximo: </label>
-                        <input type="number" id="water-max" value= 4.5 placeholder="Ej: 8"/>
-                        <label for="water-min">Valor mínimo: </label>
-                        <input type="number" id="water-min" value= 0 placeholder="Ej: 6"/>
-                        
+                                                                        
+                        <fieldset>
+                            <legend>Rango de porcentaje final de Hidratación</legend>
+                            <input type="radio" name="water-max" id="Senasa" value="8">
+                            <label for="Senasa">Absorción max exigida por SENASA (8%)</label><br>
+                            <input type="radio" name="water-max" id="UE" value="4.5" checked>
+                            <label for="UE">Absorción max exigida por Union Europea (4.5%)</label><br>
+                            <input type="radio" name="water-max" id="other" value= "" disabled>
+                            <label for="other" disabled>Otro</label>
+                        </fieldset>
+
                         <h4>Seleccion de precintos perdidos</h4>    
                         <label for="seal-lost1">Por defecto n° 21: </label>
                         <input type="number" id="seal-lost1" value= 21 placeholder="Ej: 21"/>

@@ -27,7 +27,14 @@ function getRandomArbitrary(max, min){
     return parseFloat((Math.random() * (i - x) + x).toFixed(2));
 }
 
-function arrayCompletation(max, min){
+function arrayCompletation(max){
+    let min = 0;
+    if(max == 8){
+        min = 5.5;
+    }else{
+        min = 1;
+    }
+    
     for (i = 0; i < m; i++) {
         sumA[i] = getRandomArbitrary(max, min);
     }
@@ -42,14 +49,7 @@ function averangeAbsortionArray(){
     averangeAb = sumTotal / m;
     return averangeAb;
 }
-/*
-function getRandomArbitrarySeal(max, min){
-    let p = m + 5;
-    for (let n = 0; n < p; n++){
-        numberSeal[n] = parseFloat((Math.random() * (max - min) + min).toFixed());
-    }
-}
-*/
+
 function getRandomArbitrarySeal(){
     let p = m + 5;
     let max = parseFloat((Math.random() * (9999999 - 1000) + 1000).toFixed());
@@ -95,15 +95,17 @@ $buttonGenerateTable.onclick = function(){
     createTable(25, 6);
 
     let chickenAv = parseFloat(document.getElementById("average-chicken-weight").value);
-    let sealMax = parseFloat(document.getElementById("seal-max").value);
-    let sealMin = parseFloat(document.getElementById("seal-min").value);
-    let waterMax = parseFloat(document.getElementById("water-max").value);
-    let waterMin = parseFloat(document.getElementById("water-min").value);
+    //let sealMax = parseFloat(document.getElementById("seal-max").value);
+    //let sealMin = parseFloat(document.getElementById("seal-min").value);
+    let waterMax = parseFloat(document.querySelector('input[name="water-max"]:checked').value);
+    let waterMin = 0;//parseFloat(document.getElementById("water-min").value);
     let sealLost1 = parseFloat(document.getElementById("seal-lost1").value);
     let sealLost2 = parseFloat(document.getElementById("seal-lost2").value);
     let sealLost3 = parseFloat(document.getElementById("seal-lost3").value);
     let sealLost4 = parseFloat(document.getElementById("seal-lost4").value);
     let sealLost5 = parseFloat(document.getElementById("seal-lost5").value);
+
+
 
     function comprobation(){
         if(averangeAbsortionArray() <= waterMax && averangeAbsortionArray() >= waterMin){
@@ -125,11 +127,11 @@ $buttonGenerateTable.onclick = function(){
     }
     
 
-    arrayCompletation(waterMax,waterMin);
+    arrayCompletation(waterMax);
     averangeAbsortionArray();
     comprobation(); 
     callTail();
-    getRandomArbitrarySeal(sealMin,sealMax);
+    getRandomArbitrarySeal();
     getRandomArbitrarychicken(chickenAv);
     finalChickenWeight();
     subtrationChicken();
