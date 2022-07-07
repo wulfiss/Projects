@@ -34,7 +34,7 @@ function arrayCompletation(max){
     }else{
         min = 1;
     }
-    
+
     for (i = 0; i < m; i++) {
         sumA[i] = getRandomArbitrary(max, min);
     }
@@ -138,7 +138,7 @@ $buttonGenerateTable.onclick = function(){
 
     showTableNoShowform();
 
-    let x = document.getElementById('testBody').getElementsByTagName('td')
+    let x = document.getElementById('testBody').getElementsByTagName('td');
 
     let b = 1;
     for(let k = 0; k < 150; k+=6){
@@ -174,6 +174,12 @@ $buttonGenerateTable.onclick = function(){
     for(let k = 4; k < 120; k+=6){
         x[k].textContent = subtrationChickenArray[b].toFixed(3);
         b++;
+    }
+    //lost seal check box
+    let checkBox = document.getElementById('seal-lost').checked;
+    if (checkBox == true){
+        let radNumber = parseFloat((Math.random() * (5 - 1) + 1).toFixed());
+        console.log(radNumber);
     }
 
     if(sealLost1 != 21){
