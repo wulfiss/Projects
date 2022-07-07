@@ -95,17 +95,8 @@ $buttonGenerateTable.onclick = function(){
     createTable(25, 6);
 
     let chickenAv = parseFloat(document.getElementById("average-chicken-weight").value);
-    //let sealMax = parseFloat(document.getElementById("seal-max").value);
-    //let sealMin = parseFloat(document.getElementById("seal-min").value);
     let waterMax = parseFloat(document.querySelector('input[name="water-max"]:checked').value);
-    let waterMin = 0;//parseFloat(document.getElementById("water-min").value);
-    let sealLost1 = parseFloat(document.getElementById("seal-lost1").value);
-    let sealLost2 = parseFloat(document.getElementById("seal-lost2").value);
-    let sealLost3 = parseFloat(document.getElementById("seal-lost3").value);
-    let sealLost4 = parseFloat(document.getElementById("seal-lost4").value);
-    let sealLost5 = parseFloat(document.getElementById("seal-lost5").value);
-
-
+    let waterMin = 0;
 
     function comprobation(){
         if(averangeAbsortionArray() <= waterMax && averangeAbsortionArray() >= waterMin){
@@ -175,20 +166,41 @@ $buttonGenerateTable.onclick = function(){
         x[k].textContent = subtrationChickenArray[b].toFixed(3);
         b++;
     }
+
     //lost seal check box
+    
     let checkBox = document.getElementById('seal-lost').checked;
+    let array = [21, 22, 23, 24, 25];
+    let randSeal = parseFloat((Math.random() * (4 - 0) + 0).toFixed());
+    let proNumb = 0;
+
     if (checkBox == true){
-        let radNumber = parseFloat((Math.random() * (5 - 1) + 1).toFixed());
-        console.log(radNumber);
+
+        function testProNumb(){
+            proNumb = parseFloat((Math.random() * (20 - 1) + 1).toFixed());
+            if(!array.includes(proNumb)){
+                return proNumb;
+            } else{
+                return testProNumb();
+            }
+        }
+
+        for(randSeal; randSeal >= 0; randSeal--){
+            array[randSeal] = testProNumb();
+        }
+
+        array.sort(function(a,b){
+            return a - b;
+        });
     }
 
-    if(sealLost1 != 21){
-        x[122].textContent = numberChicken[sealLost1-1].toFixed(3);
-        x[123].textContent = finalChickenW[sealLost1-1].toFixed(3);
-        x[124].textContent = subtrationChickenArray[sealLost1-1].toFixed(3);
-        x[125].textContent = sumA[sealLost1-1].toFixed(2);
+    if(array[0] != 21){
+        x[122].textContent = numberChicken[array[0]-1].toFixed(3);
+        x[123].textContent = finalChickenW[array[0]-1].toFixed(3);
+        x[124].textContent = subtrationChickenArray[array[0]-1].toFixed(3);
+        x[125].textContent = sumA[array[0]-1].toFixed(2);
 
-        let sealLost1C = ((sealLost1 - 1) * 6);
+        let sealLost1C = ((array[0] - 1) * 6);
 
         x[sealLost1C+2].textContent = numberChicken[20].toFixed(3);
         x[sealLost1C+3].textContent = "----";
@@ -196,13 +208,13 @@ $buttonGenerateTable.onclick = function(){
         x[sealLost1C+5].textContent = "----";
     }
 
-    if(sealLost2 != 22){
-        x[128].textContent = numberChicken[sealLost2-1].toFixed(3);
-        x[129].textContent = finalChickenW[sealLost2-1].toFixed(3);
-        x[130].textContent = subtrationChickenArray[sealLost2-1].toFixed(3);
-        x[131].textContent = sumA[sealLost2-1].toFixed(2);
+    if(array[1] != 22){
+        x[128].textContent = numberChicken[array[1]-1].toFixed(3);
+        x[129].textContent = finalChickenW[array[1]-1].toFixed(3);
+        x[130].textContent = subtrationChickenArray[array[1]-1].toFixed(3);
+        x[131].textContent = sumA[array[1]-1].toFixed(2);
 
-        let sealLost2C = ((sealLost2 - 1) * 6);
+        let sealLost2C = ((array[1] - 1) * 6);
         
         x[sealLost2C+2].textContent = numberChicken[21].toFixed(3);
         x[sealLost2C+3].textContent = "----";
@@ -210,13 +222,13 @@ $buttonGenerateTable.onclick = function(){
         x[sealLost2C+5].textContent = "----";
     }
 
-    if(sealLost3 != 23){
-        x[134].textContent = numberChicken[sealLost3-1].toFixed(3);
-        x[135].textContent = finalChickenW[sealLost3-1].toFixed(3);
-        x[136].textContent = subtrationChickenArray[sealLost3-1].toFixed(3);
-        x[137].textContent = sumA[sealLost3-1].toFixed(2);
+    if(array[2] != 23){
+        x[134].textContent = numberChicken[array[2]-1].toFixed(3);
+        x[135].textContent = finalChickenW[array[2]-1].toFixed(3);
+        x[136].textContent = subtrationChickenArray[array[2]-1].toFixed(3);
+        x[137].textContent = sumA[array[2]-1].toFixed(2);
 
-        let sealLost3C = ((sealLost3 - 1) * 6);
+        let sealLost3C = ((array[2] - 1) * 6);
         
         x[sealLost3C+2].textContent = numberChicken[22].toFixed(3);
         x[sealLost3C+3].textContent = "----";
@@ -224,13 +236,13 @@ $buttonGenerateTable.onclick = function(){
         x[sealLost3C+5].textContent = "----";
     }
 
-    if(sealLost4 != 24){
-        x[140].textContent = numberChicken[sealLost4-1].toFixed(3);
-        x[141].textContent = finalChickenW[sealLost4-1].toFixed(3);
-        x[142].textContent = subtrationChickenArray[sealLost4-1].toFixed(3);
-        x[143].textContent = sumA[sealLost4-1].toFixed(2);
+    if(array[3] != 24){
+        x[140].textContent = numberChicken[array[3]-1].toFixed(3);
+        x[141].textContent = finalChickenW[array[3]-1].toFixed(3);
+        x[142].textContent = subtrationChickenArray[array[3]-1].toFixed(3);
+        x[143].textContent = sumA[array[3]-1].toFixed(2);
 
-        let sealLost4C = ((sealLost4 - 1) * 6);
+        let sealLost4C = ((array[3] - 1) * 6);
         
         x[sealLost4C+2].textContent = numberChicken[23].toFixed(3);
         x[sealLost4C+3].textContent = "----";
@@ -238,13 +250,13 @@ $buttonGenerateTable.onclick = function(){
         x[sealLost4C+5].textContent = "----";
     }
 
-    if(sealLost5 != 25){
-        x[146].textContent = numberChicken[sealLost5-1].toFixed(3);
-        x[147].textContent = finalChickenW[sealLost5-1].toFixed(3);
-        x[148].textContent = subtrationChickenArray[sealLost5-1].toFixed(3);
-        x[149].textContent = sumA[sealLost5-1].toFixed(2);
+    if(array[4] != 25){
+        x[146].textContent = numberChicken[array[4]-1].toFixed(3);
+        x[147].textContent = finalChickenW[array[4]-1].toFixed(3);
+        x[148].textContent = subtrationChickenArray[array[4]-1].toFixed(3);
+        x[149].textContent = sumA[array[4]-1].toFixed(2);
 
-        let sealLost5C = ((sealLost5 - 1) * 6);
+        let sealLost5C = ((array[4] - 1) * 6);
         
         x[sealLost5C+2].textContent = numberChicken[24].toFixed(3);
         x[sealLost5C+3].textContent = "----";
