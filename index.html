@@ -10,15 +10,16 @@
 
     <body>
         <div id="formatos">
-            <!--<div class="container-2" id="container-2">-->
                 <h2>Generador de registro de Hidratación</h2>
                 <form id="data-chicken">
                     <p>
                         <h4>Fecha y Hora</h4>
                         <label for="date-test">Fecha:</label>
                         <input type="date" id="date-test"/>
-                        <label for="hour-test">Hora:</label>
+                        <label for="hour-test">Hora de inicio:</label>
                         <input type="time" id="hour-test"/>
+                        <label for="hourFinal">Hora de final:</label>
+                        <input type="time" id="hourFinal"/>
 
                         <h4>Peso promedio de pollos faenados</h4>
                         <label for="average-chicken-weight">Peso promedio de los pollos: </label>
@@ -44,7 +45,6 @@
                 </form>
                 
                 <button type="button" id="show-table">Show</button>
-           <!-- </div>-->  
         </div>
 
         <div id="registro">
@@ -73,7 +73,8 @@
 
             <div id="bannerfechahora">
                 <div id="bannerfecha">Fecha:</div>
-                <div id="bannerhora">Hora:</div>
+                <div id="bannerhora">Hora incio:</div>
+                <div id="bannerhoraF">Hora de finalización:</div>
             </div>
 
             <table id="test">

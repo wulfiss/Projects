@@ -2,7 +2,7 @@
     display: flex;
     width: 17cm;
     height: 2.197cm;
-    margin-top: 1.9cm;
+    margin-top: 46px;
     margin-left: 2.197cm;
     margin-right: 0.6cm;
     border: 1.5px solid black;
@@ -85,11 +85,11 @@
     padding-left: 3px;
 }
 
-#bannerfecha, #bannerhora{
+#bannerfecha, #bannerhora {
     display: inline-block;
     height: 0.53cm;
     margin-top: 1.06cm;
-    margin-bottom: 1.06cm;
+    margin-bottom: 0.03cm;
     font-size: 15px;
     font-weight: bold;
 }
@@ -103,4 +103,15 @@
 #bannerhora{
     width: 6.94cm;
     margin-left: 0cm;
+}
+
+#bannerhoraF{
+    display: block;
+    height: 0.53cm;
+    margin-top: 0;
+    margin-bottom: 34px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 6.94cm;
+    margin-left: 12.3cm;
 }
