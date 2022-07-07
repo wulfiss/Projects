@@ -13,6 +13,39 @@ function createTable(row, colms){
 
 }
 
+function sumMinutes(values){
+    const validate = time =>{
+        if(time > 59 || time < 0){
+            throw new Error(
+                "Hours, minutes and seconds values have to be between 0 and 59."
+            );
+        }
+        return time;
+    };
+
+    const seconds = values
+        .map(e => validate(Number(e.split(":").reverse()[0])))
+        .reduce((a, b) => a + b);
+
+    let minutes = values
+        .map(e => validate(Number(e.split(":").reverse()[1])))
+        .reduce((a, b) => a + b);
+
+    let hours = values
+        .map(e =>
+        e.split(":").reverse()[2] ? Number(e.split(":").reverse[2]) : 0)
+        .reduce((a, b) => a + b);
+
+    minutes *= 60;
+    hours *= 3600;
+
+    let result = new Date((hours + minutes + seconds) * 1000)
+        .toISOString()
+        .substr(11, 8);
+
+    return result.split(":").reverse()[2] === "00" ? result.slice(3) : result;
+}
+
 function showTableNoShowform(){
     let styleTable = document.getElementById("registro");
     styleTable.style.display ='block';
@@ -269,12 +302,16 @@ $buttonGenerateTable.onclick = function(){
 
     let timeAsk = document.getElementById('hour-test').value;
     let timeSpan2 = document.getElementById('bannerhoraF')
-    let finalTime = document.getElementById('hourFinal').value;
     let timeSpan = document.getElementById('bannerhora');
     
+    let mina = parseFloat((Math.random() * (50 - 45) + 45).toFixed());
+    let secondTime = '00:' + mina;
 
-    timeSpan.textContent = `Hora: ${timeAsk}hs`;
-    timeSpan2.textContent = `Hora de finalización: ${finalTime}hs`;
+    let finalTime = sumMinutes([timeAsk, secondTime]);
+
+
+    timeSpan.textContent = `Hora: ${timeAsk} HS`;
+    timeSpan2.textContent = `Hora de finalización: ${finalTime} HS`;
     
     let dateAsk = document.getElementById('date-test').value.toString();
     let dateSpan = document.getElementById('bannerfecha');
@@ -288,5 +325,9 @@ $buttonGenerateTable.onclick = function(){
 
     return false;
 }
+
+
+
+
 
 
