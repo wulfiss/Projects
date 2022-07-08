@@ -93,8 +93,8 @@ function getRandomArbitrarySeal(){
 }
 
 function getRandomArbitrarychicken(avChicken){
-    let max = avChicken + 0.350;
-    let min = avChicken - 0.350;
+    let max = avChicken + 0.950;
+    let min = avChicken - 0.950;
     let p = m + 5;
     for (let n = 0; n < p; n++){
         numberChicken[n] = parseFloat((Math.random() * (max - min) + min).toFixed(3));
@@ -204,7 +204,7 @@ $buttonGenerateTable.onclick = function(){
     
     let checkBox = document.getElementById('seal-lost').checked;
     let array = [21, 22, 23, 24, 25];
-    let randSeal = parseFloat((Math.random() * (4 - 0) + 0).toFixed());
+    let randSeal = parseFloat((Math.random() * (3 - 0) + 0).toFixed());
     let proNumb = 0;
 
     if (checkBox == true){
