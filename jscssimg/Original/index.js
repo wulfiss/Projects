@@ -1,6 +1,6 @@
 //Related to percentage of water absortion
 function getRandomArbitrary (){
-    return Number((Math.random() * (15 - 4) + 4).toFixed(2));
+    return Number((Math.random() * (8 - 1) + 1).toFixed(2));
 }
 function arrayCompletation(){
     for (i = 0; i < m; i++) {
@@ -19,7 +19,7 @@ function averangeAbsortionArray(){
 }
 
 function comprobation(){
-    if(averangeAbsortionArray() <= 8 && averangeAbsortionArray() >= 6){
+    if(averangeAbsortionArray() <= 4.5 && averangeAbsortionArray() >= 1){
         return true;
     }else{
         return false;
@@ -82,9 +82,9 @@ averangeAbsortionArray();
 comprobation(); 
 callTail();
 //up to here
-getRandomArbitrarySeal(6000, 4500);
+getRandomArbitrarySeal(9999, 4500);
 console.log(numberSeal);
-getRandomArbitrarychicken(1.958, 2.821);
+getRandomArbitrarychicken(1.758, 3.221);
 console.log(numberChicken);
 finalChickenWeight();
 console.log(finalChickenW);
