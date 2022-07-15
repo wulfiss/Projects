@@ -12,34 +12,46 @@
         <div id="formatos">
                 <h2>Generador de registro de Hidratación</h2>
                 <form id="data-chicken">
-                    <p>
-                        <h4>Fecha y Hora</h4>
-                        <label for="date-test">Fecha:</label>
-                        <input type="date" id="date-test"/>
-                        <label for="hour-test">Hora de inicio:</label>
-                        <input type="time" id="hour-test"/>
-
-                        <h4>Peso promedio de pollos faenados</h4>
-                        <label for="average-chicken-weight">Peso promedio de los pollos: </label>
-                        <input type="number" id="average-chicken-weight" value= 2.500 placeholder="Ej: 2.500"/><br>
-                                                                        
-                        <fieldset>
-                            <legend>Rango de porcentaje final de Hidratación</legend>
-                            <input type="radio" name="water-max" id="Senasa" value="8">
-                            <label for="Senasa">Absorción max exigida por SENASA (8%)</label><br>
-                            <input type="radio" name="water-max" id="UE" value="4.5" checked>
-                            <label for="UE">Absorción max exigida por Union Europea (4.5%)</label><br>
-                            <input type="radio" name="water-max" id="other" value= "" disabled>
-                            <label for="other" disabled>Otro</label>
-                        </fieldset>
-
-                        <input type="checkbox" name="sealLost" id="seal-lost">
-                        <label for="seal-lost">Check para agregar precintos perdidos</label>
-
-                        <h4>Observaciones o medidas correctivas</h4>
-                        <textarea id="observacionForm" placeholder="Observaciones"></textarea>
-                    </p>
-                        
+                    <ul>
+                        <li>
+                            <label for="date-test">Fecha:</label>
+                            <input type="date" id="date-test"/>
+                        </li>
+                        <li>    
+                            <label for="hour-test">Hora de inicio:</label>
+                            <input type="time" id="hour-test"/>
+                        </li>
+                        <li>
+                            <label for="average-chicken-weight">Peso promedio de los pollos: 
+                            <input type="number" id="average-chicken-weight" value= 2.50 step="0.01" placeholder="2.50"/>
+                            kg.</label>
+                        </li>                                               
+                        <li>
+                            <div>Rango de porcentaje final de Hidratación</div>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="water-max" id="Senasa" value="8">
+                                    <label for="Senasa">Absorción max exigida por SENASA (8%)</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="water-max" id="UE" value="4.5" checked>
+                                    <label for="UE">Absorción max exigida por Union Europea (4.5%)</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="water-max" id="other" value= "" disabled>
+                                    <label for="other" disabled>Otro</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="seal-lost">Seleccionar para agregar precintos perdidos</label>
+                            <input type="checkbox" name="sealLost" id="seal-lost">
+                        </li>    
+                        <li>
+                            <label>Observaciones o medidas correctivas</label>
+                            <textarea id="observacionForm" placeholder="Observaciones"></textarea>
+                        </li>
+                    </ul>  
                 </form>
                 
                 <button type="button" id="show-table">Show</button>
