@@ -128,8 +128,16 @@ $buttonGenerateTable.onclick = function(){
     createTable(25, 6);
 
     let chickenAv = parseFloat(document.getElementById("average-chicken-weight").value);
-    let waterMax = parseFloat(document.querySelector('input[name="water-max"]:checked').value);
+    let waterMaxForm = parseFloat(document.querySelector('input[name="water-max"]:checked').value);
+    let customAbs =  parseFloat(document.querySelector('input[name="custom').value);
     let waterMin = 0;
+    let waterMax = 0;
+
+    if(waterMaxForm == 100){
+        waterMax = customAbs;
+    } else{
+        waterMax = waterMaxForm;
+    }
 
     function comprobation(){
         if(averangeAbsortionArray() <= waterMax && averangeAbsortionArray() >= waterMin){
