@@ -124,3 +124,26 @@ h4{
     text-align: center;
 }
 
+li > ul > li{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 10px;
+}
+
+li{
+ margin: 15px;
+}
+
+textarea{
+    margin: 10px;
+}
+
+li > div{
+    display: flex;
+    align-items: center;
+}
+
+div#formatos{
+    margin: auto;
+}
